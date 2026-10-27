@@ -652,8 +652,8 @@ footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
         <article class="chapter"><span class="n">CAPITOLO 1</span><blockquote>«Cosa mi serve, giornalmente?»</blockquote>
           <p>Il developer di LRApps è partito dalla sua giornata: una webcam migliore senza comprarne una, sapere prima del varco se si può entrare, sistemare file al volo.</p>
           <div class="born" data-born="webcamlr gatelr orbitlr"></div></article>
-        <article class="chapter"><span class="n">CAPITOLO 2</span><blockquote>«E a te, cosa servirebbe ogni giorno?»</blockquote>
-          <p>Poi la domanda è passata a sua cognata, musicista: togliere la voce da un brano, isolare il basso, provare un passaggio fino a impararlo.</p>
+        <article class="chapter"><span class="n">CAPITOLO 2</span><blockquote>«E a chi suona, cosa servirebbe?»</blockquote>
+          <p>Poi la stessa domanda l'abbiamo fatta a chi fa musica: togliere la voce da un brano, isolare il basso, ripetere un passaggio finché non lo impari.</p>
           <div class="born" data-born="isolr"></div></article>
       </div>
     </div>
@@ -664,7 +664,7 @@ footer a { text-decoration: none; } footer a:hover { color: var(--ink); }
   <div class="wrap">
     <div class="block-head"><span class="eyebrow">Missioni</span><h1>Cinque promesse.</h1><p class="lead">Per ognuna, qualcosa dentro le app che la dimostra.</p></div>
     <div class="missions">
-      <div class="mission"><span class="n">1</span><div><h3>Un problema vero</h3><p class="muted">Un'app esiste solo se qualcuno ne ha bisogno.</p></div><div class="proof"><span><b>IsoLR</b> · nata dalle richieste di una musicista: accordi, metronomo, parti da ripetere.</span><span><b>GateLR</b> · una domanda sola: «posso entrare?».</span></div></div>
+      <div class="mission"><span class="n">1</span><div><h3>Un problema vero</h3><p class="muted">Un'app esiste solo se qualcuno ne ha bisogno.</p></div><div class="proof"><span><b>IsoLR</b> · nata dalle richieste di chi suona: accordi, metronomo, parti da ripetere.</span><span><b>GateLR</b> · una domanda sola: «posso entrare?».</span></div></div>
       <div class="mission"><span class="n">2</span><div><h3>I tuoi file restano tuoi</h3><p class="muted">Il lavoro si fa sul dispositivo.</p></div><div class="proof"><span><b>IsoLR</b> · separa le canzoni sul Mac, anche senza internet.</span><span><b>OrbitLR</b> · sottotitoli calcolati sul Mac: l'audio non parte.</span></div></div>
       <div class="mission"><span class="n">3</span><div><h3>Parlare chiaro</h3><p class="muted">Parole di tutti i giorni, errori che spiegano cosa fare.</p></div><div class="proof"><span><b>OrbitLR</b> · «Questo mese hai risparmiato 3,4 GB», e Annulla sempre a portata.</span><span><b>GateLR</b> · ogni regola con il link al Comune.</span></div></div>
       <div class="mission"><span class="n">4</span><div><h3>Ascoltare chi le usa</h3><p class="muted">Le segnalazioni decidono le priorità.</p></div><div class="proof"><span><b>OrbitLR</b> · «Suggerisci un'idea», direttamente dall'app.</span><span><b>GateLR 1.12.1</b> · una versione intera di correzioni.</span></div></div>
@@ -761,7 +761,7 @@ const APPS = [
     short: "Converti, comprimi e scarica foto, video, audio e PDF da un menu a torta.",
     lead: "Trascini un file e intorno si apre la torta con le azioni giuste. Oppure incolli un link e scarichi video o audio. Tutto sul Mac.",
     ask: "«Perché per convertire un file servono cinque programmi?»",
-    version: "4.2.1 · Windows 0.6", status: ["ok", "Stabile"], platforms: ["macOS 14+", "Apple Silicon e Intel", "Windows 10 e 11 (anteprima)", "Italiano e inglese"],
+    version: "4.2.1 · Windows 0.7", status: ["ok", "Stabile"], platforms: ["macOS 14+", "Apple Silicon e Intel", "Windows 10 e 11 (anteprima)", "Italiano e inglese"],
     facts: [
       ["Menu a torta", "Trascini sulla barra dei menu o sulla linguetta a lato."],
       ["Downloader", "Incolli un link: video fino a 1080p o solo audio."],
@@ -778,13 +778,13 @@ const APPS = [
       ["done", "Carattere", "4.0", "Annulla, spazio risparmiato, suggerisci un'idea."],
       ["done", "Downloader", "4.1", "Audio e video da migliaia di siti."],
       ["done", "English", "4.2", "Tutta l'app in inglese, anche i nomi dei file creati."],
-      ["done", "OrbitLR per Windows", "0.2–0.6", "Tutte le funzioni del Mac: IA per le foto, editor PDF, Ctrl+Alt+C, «Inquadra le persone», logo tolto con l'IA."],
-      ["now", "Il sito", "in corso", "La torta che converte davvero nel browser."],
+      ["done", "OrbitLR per Windows", "0.2–0.7", "Come il Mac: IA per le foto, editor PDF, Ctrl+Alt+C, «Inquadra le persone», logo tolto con l'IA, linguetta, suoni."],
+      ["done", "Il sito", "online", "La torta che converte davvero nel browser, e i download per Mac e Windows."],
       ["next", "Fidata", "", "Firma e notarizzazione Apple."],
       ["next", "Lancio", "4.3", "Prova di 14 giorni, sito con video brevi."]
     ],
     download: { title: "Scarica per Mac o Windows", text: "Scarica l'ultima versione dalle Release: poi gli aggiornamenti arrivano da soli, firmati. Su Windows, finché manca la firma di Microsoft, al primo avvio scegli «Ulteriori informazioni» → «Esegui comunque».", buttons: [["Ultima versione per Mac", GH + "OrbitLR/releases"], ["Anteprima per Windows", GH + "OrbitLR/releases/tag/windows-anteprima"]], note: "Mac con Apple Silicon o Intel; Windows 10 o 11 a 64 bit. LibreOffice è facoltativo, solo per Word, Excel e PowerPoint." },
-    links: [["Sito ufficiale", "in preparazione"], ["Codice", "github.com/LR-apps609/OrbitLR", GH + "OrbitLR"], ["Versioni", "Release su GitHub", GH + "OrbitLR/releases"]],
+    links: [["Sito ufficiale", "lr-apps609.github.io/OrbitLR", "https://lr-apps609.github.io/OrbitLR/"], ["Codice", "github.com/LR-apps609/OrbitLR", GH + "OrbitLR"], ["Versioni", "Release su GitHub", GH + "OrbitLR/releases"]],
     acct: ["Base pronta (Accedi con Apple), ancora spenta.", "wip", "Pronta, spenta"]
   },
   {
